@@ -1,22 +1,17 @@
 import path from 'node:path';
-import { readFileSync } from 'node:fs';
 import _ from 'lodash';
+import parser from './parsers.js';
 
 const pathToFile = (filePath) => (filePath.includes('__fixtures__')
   ? path.resolve(process.cwd(), filePath)
   : path.resolve(process.cwd(), `__fixtures__/${filePath}`));
 
-// console.log(pathToFile(filePath1));
-
 const difference = (filePath1, filePath2) => {
   const path1 = pathToFile(filePath1);
   const path2 = pathToFile(filePath2);
 
-  const readedFile1 = readFileSync(path1, { encoding: 'utf-8' });
-  const readedFile2 = readFileSync(path2, { encoding: 'utf-8' });
-
-  const obj1 = JSON.parse(readedFile1);
-  const obj2 = JSON.parse(readedFile2);
+  const obj1 = parser(path1);
+  const obj2 = parser(path2);
 
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
