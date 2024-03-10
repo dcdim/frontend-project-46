@@ -21,7 +21,7 @@
 
 <code>gendiff -h</code>
 
-  <code>Usage: gendiff [options] <filepath1> <filepath2></code>
+  <code>Usage: gendiff [options] \<filepath1\> \<filepath2\></code>
 
   Compares two configuration files and shows a difference.
 
