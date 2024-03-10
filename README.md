@@ -32,9 +32,9 @@
 
 <p>The program is able to output differences in three formats: stylish(default), plain and json. To output the result according to a specific format, type -f [format]:</p>
 
-<code>gendiff -f stylish file1.json file2.yaml</code>
-<code>gendiff -f plain file1.json file2.yaml</code>
-<code>gendiff -f json file1.json file2.yaml</code>
+<code>gendiff -f stylish file1.json file2.yaml<br /></code>
+<code>gendiff -f plain file1.json file2.yaml<br /></code>
+<code>gendiff -f json file1.json file2.yaml<br /></code>
 
 <h3>Example of work</h3>
 
