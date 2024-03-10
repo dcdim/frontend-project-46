@@ -19,22 +19,22 @@
 
 <h3>Usage</h3>
 
-<code>gendiff -h
+<code>gendiff -h</code>
 
-  Usage: gendiff [options] <filepath1> <filepath2>
+  <code>Usage: gendiff [options] <filepath1> <filepath2></code>
 
   Compares two configuration files and shows a difference.
 
-  Options:
+  <code>Options:
     -V, --version        output the version number
     -f, --format [type]  output format
     -h, --help           output usage information</code>
 
 <p>The program is able to output differences in three formats: stylish(default), plain and json. To output the result according to a specific format, type -f [format]:</p>
 
-<code>gendiff -f stylish file1.json file2.yaml
-gendiff -f plain file1.json file2.yaml
-gendiff -f json file1.json file2.yaml</code>
+<code>gendiff -f stylish file1.json file2.yaml</code>
+<code>gendiff -f plain file1.json file2.yaml</code>
+<code>gendiff -f json file1.json file2.yaml</code>
 
 <h3>Example of work</h3>
 
