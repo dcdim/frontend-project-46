@@ -19,7 +19,7 @@
 
 <h3>Usage</h3>
 
-<code>gendiff -h</code>
+<pre><code>gendiff -h</code>
 
   <code>Usage: gendiff [options] \<filepath1\> \<filepath2\></code>
 
@@ -29,12 +29,14 @@
     -V, --version        output the version number
     -f, --format [type]  output format
     -h, --help           output usage information</code>
-
+</pre>
 <p>The program is able to output differences in three formats: stylish(default), plain and json. To output the result according to a specific format, type -f [format]:</p>
 
-<code>gendiff -f stylish file1.json file2.yaml<br /></code>
-<code>gendiff -f plain file1.json file2.yaml<br /></code>
-<code>gendiff -f json file1.json file2.yaml<br /></code>
+<pre>
+  <code>gendiff -f stylish file1.json file2.yaml<br /></code>
+  <code>gendiff -f plain file1.json file2.yaml<br /></code>
+  <code>gendiff -f json file1.json file2.yaml<br /></code>
+</pre>
 
 <h3>Example of work</h3>
 
